@@ -17,9 +17,9 @@ public class DataSeeder implements CommandLineRunner {
     @Override
     public void run(String... args) {
         Account a1 = accountService.createAccount(
-                new Account("Arjun Sharma", "arjun@bank.com", 10000.0, Account.AccountType.SAVINGS));
+                new Account("Vikram Singh", "vikram@bank.com", 10000.0, Account.AccountType.SAVINGS));
         Account a2 = accountService.createAccount(
-                new Account("Priya Mehta", "priya@bank.com", 25000.0, Account.AccountType.CURRENT));
+                new Account("Srashti Dwivedi", "priya@bank.com", 25000.0, Account.AccountType.CURRENT));
 
         accountService.deposit(a1.getId(), 5000.0);
         accountService.withdraw(a2.getId(), 3000.0);
